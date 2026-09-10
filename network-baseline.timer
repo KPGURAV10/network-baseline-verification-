@@ -1,0 +1,10 @@
+[Unit]
+Description=Run NUC network baseline check after reboot
+
+[Timer]
+OnBootSec=30s
+Persistent=true
+Unit=network-baseline.service
+
+[Install]
+WantedBy=timers.target
